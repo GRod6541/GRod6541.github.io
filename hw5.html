@@ -5,6 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homework 5</title>
+    <script>
+        
+        function uphilltext(text){
+        var temptext=text.toUpperCase()
+        var size=1
+        //go through the text, letter by letter
+        for (i=0;i<temptext.length;i++){
+        document.write(temptext.charAt(i).fontsize(size).bold())
+        if (size<7)
+        size++
+        else
+        size=1
+        }
+        }
+        </script>
 </head>
 <body style="background-image: url('backimage.png'); background-color: aliceblue;">
     <h1 style="text-align:center;">Web Development</h1> 
@@ -33,6 +48,11 @@
         
          
     </p>
+    <p> Apart from HTML an CSS, you can have fun to with Javascript. for instance, the Uphill Text script renders text with ascending font sizes (from font size 1 to 7),
+         starting over when it hits 7. Great and efficient way of sprucing up selected messages on your site!<br>
+         <script>
+            uphilltext("Welcome to our site!")
+            </script></p>
 
     <footer style="border: blue 3px solid;">
         <div style="background-image:url(wallpaper.jpeg)">
